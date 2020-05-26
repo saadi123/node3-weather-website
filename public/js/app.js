@@ -1,4 +1,4 @@
-console.log('Hello World');
+//console.log('Hello World');
 
 fetch('http://puzzle.mead.io/puzzle').then((response)=>{
         response.json().then((data)=>{
