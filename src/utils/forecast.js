@@ -10,9 +10,9 @@ const forecast = (latitude, longitude, callback) => {
                 } else if (body.error) {
                     callback('Can\'t find data', undefined);
                 } else {
-                    callback(undefined, 'It is currently ' + body.main.temp + ' degrees out ');
+                    callback(undefined, 'It is currently ' + body.main.temp + ' degrees out and feels like '+body.main.feels_like + ' in ' + body.name);
                 }
-            })
+            });
 
     };
     
